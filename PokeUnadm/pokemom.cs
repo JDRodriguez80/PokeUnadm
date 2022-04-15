@@ -65,30 +65,8 @@ namespace PokeUnadm
             this.podAtaqueEspecial = _podAtaqueEspecial;
         }
 
-        //metodo para alimentar
-        public void alimenta() { 
-        int i=0;
-            pesoActual = peso;
-
-            if (i<=10 && pesoActual<(peso*2)) { nivelMotivacion = nivelMotivacion + .01;
-                pesoActual = pesoActual + 0.2;
-                i++;
-
-            }
-        }
-
-        //metodos para atques
-        public void AtaqueBasico() {
-
-            double danoReal = (podAtaqueBasico * (ptsEXP * .50)) + nivelMotivacion;
-            Console.WriteLine("Daño de ataque basico:" + podAtaqueBasico + "\nDaño real:"+danoReal);
-            ptsEXP = ptsEXP + 0.1;           
-        }
-        public void AtaqueEspecial() {
-            double danoReal = (podAtaqueEspecial * (ptsEXP * .50)) + nivelMotivacion;
-            Console.WriteLine("Daño de ataque especial:" + podAtaqueEspecial + "\nDaño real:" + danoReal);
-            ptsEXP = ptsEXP + 0.1;
-        }
+        
+        
 
     }
 
