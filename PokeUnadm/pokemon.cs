@@ -10,7 +10,7 @@ namespace PokeUnadm
         private double pesoActual;//aumenta .02 gramos por alimentacion, con limite de el doble de peso
         private double altura;
         private String sexo;
-        private bool esSalvaje;
+        private bool esSalvaje=false;
         private double nivelMotivacion = 0.0;//aumenta en 0.1 por cada vez que se alimente, con limite de 10 acciones por ejecucución 
         private double ptsEXP;//establecerse en 0 si el pokemon es salvaje y en 10 si no lo es ademas que obtinene 0.1 despues de hacer un ataque 
         private double podAtaqueBasico;
